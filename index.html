@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neoncholia</title>
+    <style>
+        #wrapper {
+            font-size: 48px;
+            text-align: center;
+            position: relative;
+            z-index: 10;
+        }
+        h1 {
+        	left: 300px;
+        	text-align: center;
+        	position: relative;
+       	 z-index: 20;
+       }
+        div:not(#wrapper) {
+            position: relative;
+            white-space: nowrap;
+            display: inline-block;
+        }
+        input[type="checkbox"] {
+            height: 1.6em;
+            width: 1.6em;
+            margin: 14px;
+        }
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            background: radial-gradient(circle, rgba(0,0,0,0.8), rgba(10,10,10,0.95));
+            background-size: 100% 100%;
+            animation: disco-lights 5s infinite, flashing 6s infinite alternate;
+            filter: blur(2px);
+            mix-blend-mode: screen;
+        }
+
+        @keyframes disco-lights {
+            0% {
+                background: radial-gradient(circle at 20% 20%, #0ff, transparent),
+                            radial-gradient(circle at 80% 50%, #f0f, transparent),
+                            radial-gradient(circle at 50% 80%, #ff0, transparent);
+            }
+            33% {
+                background: radial-gradient(circle at 70% 20%, #0f0, transparent),
+                            radial-gradient(circle at 20% 70%, #f00, transparent),
+                            radial-gradient(circle at 50% 50%, #00f, transparent);
+            }
+            66% {
+                background: radial-gradient(circle at 50% 10%, #ff00aa, transparent),
+                            radial-gradient(circle at 90% 80%, #00ffaa, transparent),
+                            radial-gradient(circle at 10% 90%, #aa00ff, transparent);
+            }
+            100% {
+                background: radial-gradient(circle at 20% 20%, #0ff, transparent),
+                            radial-gradient(circle at 80% 50%, #f0f, transparent),
+                            radial-gradient(circle at 50% 80%, #ff0, transparent);
+            }
+        }
+
+        @keyframes flashing {
+            0%, 100% { opacity: 0.8; }
+            50% { opacity: 0.3; }
+        }
+
+        .disco-circle {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: rgba(0,255,255,0.7);
+            animation: move 1s infinite ease-in-out;
+            box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff;
+        }
+
+        @keyframes move {
+            0% {
+                top: calc(50% - 25px);
+                left: calc(50% - 25px);
+                transform: scale(1) rotate(0deg);
+            }
+            50% {
+                top: 20%;
+                left: 70%;
+                transform: scale(1.5) rotate(180deg);
+            }
+            100% {
+                top: calc(80% - 25px);
+                left: 20%;
+                transform: scale(1) rotate(360deg);
+            }
+        }
+</style>
+</head>
+<body>
+    <div id="wrapper">
+        <h1>Neoncholia</h1>
+        <div>
+            <input type="checkbox">bangun menyambut pencerahan
+            <input type="checkbox">menguap tiada habisnya
+            <input type="checkbox">mencatat jurnal, pikiran terjungkal
+            <input type="checkbox">kopi, atau sekadar ilusi
+            <input type="checkbox">laporan menunggu, dan aku menghilang
+        </div>
+        <div>
+            <input type="checkbox">menanam gagah, menuai tragis
+            <input type="checkbox">terapis membuatku menangis
+            <input type="checkbox">memahami dunia, lalu terperangkap di sana
+            <input type="checkbox">mental healing dalam sistem kapitalis
+        </div>
+        <div>
+            <input type="checkbox">tubuh kaku, semangat layu
+            <input type="checkbox">siang berlalu dalam kerumitan
+            <input type="checkbox">menulis lagi hal-hal yang sama
+            <input type="checkbox">apa lagi yang hilang?
+            <input type="checkbox">healing atau uji nyali?
+        </div>
+        <div>
+            <input type="checkbox">foto makanan, sekadar pelarian
+            <input type="checkbox">yoga, tanpa bawa pikiran
+            <input type="checkbox">nangis di jalan pulang
+            <input type="checkbox">tetangga tahu? atau tak peduli?
+        </div>
+        <div>
+            <input type="checkbox">jurnal, tanpa henti
+            <input type="checkbox">frustrasi, terapis tak mengerti aku
+            <input type="checkbox">makan malam, sendiri
+            <input type="checkbox">setidaknya ada brokoli
+        </div>
+        <div>
+            <input type="checkbox">masih pentingkah berpikir?
+            <input type="checkbox">mandi, atau sekadar basuh
+            <input type="checkbox">mengetik html kosong
+            <input type="checkbox">Pomsky di layar, pelipur lara
+        </div>
+        <div>
+            <input type="checkbox">januari seperti ular
+            <input type="checkbox">kesedihan punya varian rasa lain?
+        </div>
+        <div>
+            <input type="checkbox">tidur, atau lari dari kenyataan?
+            <input type="checkbox">Pomsky, jangan main di laptop!
+            <input type="checkbox">berapa era kegelapan lagi?
+            <input type="checkbox">riset, survei, kerumitan statistik
+            <input type="checkbox">bikin puisi, sia-sia
+        </div>
+        <div>
+            <input type="checkbox">beli obat, atau bertahan?
+            <input type="checkbox">bayar tagihan, atau tunda lagi?
+            <input type="checkbox">puisi bijak dari orang putus asa
+            <input type="checkbox">Afrizal? Siapa itu bahkan?
+        </div>
+        <div>
+    <input type="checkbox">membuka mata, dan dunia belum nyata
+    <input type="checkbox">badan ini berat, sendinya berkarat
+    <input type="checkbox">apa yang hilang sekarang?
+    <input type="checkbox">memikirkan potensi viral
+    <input type="checkbox">ada kantuk di setiap harmoni
+</div>
+<div>
+    <input type="checkbox">sprei, panci, rantang cantik, masuk wishlist!
+    <input type="checkbox">zaman terus berlari, aku terlalu tua dan lambat
+    <input type="checkbox">nanti, tunggu, jangan terburu-buru
+    <input type="checkbox">baik dan buruk ternyata cuma nilai
+    <input type="checkbox">apakah tikus menyadari dirinya tikus?
+</div>
+<div>
+    <input type="checkbox">tangan gemetar
+    <input type="checkbox">getaran apa ini?
+    <input type="checkbox">menunggu, menunggu, dan menunggu
+    <input type="checkbox">apakah kita hamster?
+    <input type="checkbox">jangan salahkan aku
+</div>
+<div>
+    <input type="checkbox">terus mencari jalan keluar
+    <input type="checkbox">apa lagi yang harus kukerjakan?
+    <input type="checkbox">waktu terlalu bernafsu menelanku
+    <input type="checkbox">fokus mencapai tujuan, yang buram
+    <input type="checkbox">tugas-tugas ialah badai tanpa akhir
+</div>
+<div>
+    <input type="checkbox">luka ialah jalan keluar, bagi darah
+    <input type="checkbox">dari kegelapan yang lebih bebas
+    <input type="checkbox">cahaya ialah pagar
+    <input type="checkbox">apa bedanya keteraturan dan kebosanan?
+    <input type="checkbox">ke depan jurang, ke belakang utang
+</div>
+<div>
+    <input type="checkbox">tampang cool, meski hidup tumpul
+    <input type="checkbox">bersikap dingin dan melankolis
+    <input type="checkbox">mengapa butuh dan ingin selalu berkelahi?
+    <input type="checkbox">menatap layar putih
+    <input type="checkbox">apakah aku mengerti apa yang terjadi?
+</div>
+<div>
+    <input type="checkbox">terlalu banyak mulut terbuka
+    <input type="checkbox">berbicara dengan diri sendiri
+    <input type="checkbox">mencari makna dalam ruang hampa
+    <input type="checkbox">pikiran berlarian, tak ada waktu mengejarnya
+    <input type="checkbox">menatap wajah di cermin, mencoba berkenalan
+</div>
+<div>
+    <input type="checkbox">membuka banyak tab untuk satu masalah
+    <input type="checkbox">menyusun rencana hingga berakhir sia-sia
+    <input type="checkbox">mendengar suara alam, dan mematikan fitur makna
+    <input type="checkbox">bernafas meski sesak
+    <input type="checkbox">terbangun di alam mimpi
+</div>
+<div>
+    <input type="checkbox">terlalu banyak pilihan
+    <input type="checkbox">mencoba tertawa, meski hati kosong
+    <input type="checkbox">mengikuti arus, dan terombang-ambing
+    <input type="checkbox">apa yang benar-benar penting?
+    <input type="checkbox">melangkah ke depan, kaki enggan
+</div>
+<div>
+            <input type="checkbox">bangun menyambut pencerahan
+            <input type="checkbox">menguap tiada habisnya
+            <input type="checkbox">mencatat jurnal, pikiran terjungkal
+            <input type="checkbox">kopi, atau sekadar ilusi
+            <input type="checkbox">laporan menunggu, dan aku menghilang
+        </div>
+        <div>
+            <input type="checkbox">menanam gagah, menuai tragis
+            <input type="checkbox">terapis membuatku menangis
+            <input type="checkbox">memahami dunia, lalu terperangkap di sana
+            <input type="checkbox">mental healing dalam sistem kapitalis
+        </div>
+        <div>
+            <input type="checkbox">tubuh kaku, semangat layu
+            <input type="checkbox">siang berlalu dalam kerumitan
+            <input type="checkbox">menulis lagi hal-hal yang sama
+            <input type="checkbox">apa lagi yang hilang?
+            <input type="checkbox">healing atau uji nyali?
+        </div>
+        <div>
+            <input type="checkbox">foto makanan, sekadar pelarian
+            <input type="checkbox">yoga, tanpa bawa pikiran
+            <input type="checkbox">nangis di jalan pulang
+            <input type="checkbox">tetangga tahu? atau tak peduli?
+        </div>
+        <div>
+            <input type="checkbox">jurnal, tanpa henti
+            <input type="checkbox">frustrasi, terapis tak mengerti aku
+            <input type="checkbox">makan malam, sendiri
+            <input type="checkbox">setidaknya ada brokoli
+        </div>
+        <div>
+            <input type="checkbox">masih pentingkah berpikir?
+            <input type="checkbox">mandi, atau sekadar basuh
+            <input type="checkbox">mengetik html kosong
+            <input type="checkbox">Pomsky di layar, pelipur lara
+        </div>
+        <div>
+            <input type="checkbox">januari seperti ular
+            <input type="checkbox">kesedihan punya varian rasa lain?
+        </div>
+        <div>
+            <input type="checkbox">tidur, atau lari dari kenyataan?
+            <input type="checkbox">Pomsky, jangan main di laptop!
+            <input type="checkbox">berapa era kegelapan lagi?
+            <input type="checkbox">riset, survei, kerumitan statistik
+            <input type="checkbox">bikin puisi, sia-sia
+        </div>
+        <div>
+            <input type="checkbox">beli obat, atau bertahan?
+            <input type="checkbox">bayar tagihan, atau tunda lagi?
+            <input type="checkbox">puisi bijak dari orang putus asa
+            <input type="checkbox">Afrizal? Siapa itu bahkan?
+        </div>
+        <div>
+    <input type="checkbox">membuka mata, dan dunia belum nyata
+    <input type="checkbox">badan ini berat, sendinya berkarat
+    <input type="checkbox">apa yang hilang sekarang?
+    <input type="checkbox">memikirkan potensi viral
+    <input type="checkbox">ada kantuk di setiap harmoni
+</div>
+<div>
+    <input type="checkbox">sprei, panci, rantang cantik, masuk wishlist!
+    <input type="checkbox">zaman terus berlari, aku terlalu tua dan lambat
+    <input type="checkbox">nanti, tunggu, jangan terburu-buru
+    <input type="checkbox">baik dan buruk ternyata cuma nilai
+    <input type="checkbox">apakah tikus menyadari dirinya tikus?
+</div>
+<div>
+    <input type="checkbox">tangan gemetar
+    <input type="checkbox">getaran apa ini?
+    <input type="checkbox">menunggu, menunggu, dan menunggu
+    <input type="checkbox">apakah kita hamster?
+    <input type="checkbox">jangan salahkan aku
+</div>
+<div>
+    <input type="checkbox">terus mencari jalan keluar
+    <input type="checkbox">apa lagi yang harus kukerjakan?
+    <input type="checkbox">waktu terlalu bernafsu menelanku
+    <input type="checkbox">fokus mencapai tujuan, yang buram
+    <input type="checkbox">tugas-tugas ialah badai tanpa akhir
+</div>
+<div>
+    <input type="checkbox">luka ialah jalan keluar, bagi darah
+    <input type="checkbox">dari kegelapan yang lebih bebas
+    <input type="checkbox">cahaya ialah pagar
+    <input type="checkbox">apa bedanya keteraturan dan kebosanan?
+    <input type="checkbox">ke depan jurang, ke belakang utang
+</div>
+<div>
+    <input type="checkbox">tampang cool, meski hidup tumpul
+    <input type="checkbox">bersikap dingin dan melankolis
+    <input type="checkbox">mengapa butuh dan ingin selalu berkelahi?
+    <input type="checkbox">menatap layar putih
+    <input type="checkbox">apakah aku mengerti apa yang terjadi?
+</div>
+<div>
+    <input type="checkbox">terlalu banyak mulut terbuka
+    <input type="checkbox">berbicara dengan diri sendiri
+    <input type="checkbox">mencari makna dalam ruang hampa
+    <input type="checkbox">pikiran berlarian, tak ada waktu mengejarnya
+    <input type="checkbox">menatap wajah di cermin, mencoba berkenalan
+</div>
+<div>
+    <input type="checkbox">membuka banyak tab untuk satu masalah
+    <input type="checkbox">menyusun rencana hingga berakhir sia-sia
+    <input type="checkbox">mendengar suara alam, dan mematikan fitur makna
+    <input type="checkbox">bernafas meski sesak
+    <input type="checkbox">terbangun di alam mimpi
+</div>
+<div>
+    <input type="checkbox">terlalu banyak pilihan
+    <input type="checkbox">mencoba tertawa, meski hati kosong
+    <input type="checkbox">mengikuti arus, dan terombang-ambing
+    <input type="checkbox">apa yang benar-benar penting?
+    <input type="checkbox">melangkah ke depan, kaki enggan
+</div>
+<div>
+            <input type="checkbox">tubuh kaku, semangat layu
+            <input type="checkbox">siang berlalu dalam kerumitan
+            <input type="checkbox">menulis lagi hal-hal yang sama
+            <input type="checkbox">apa lagi yang hilang?
+            <input type="checkbox">healing atau uji nyali?
+        </div>
+        <div>
+    <input type="checkbox">sprei, panci, rantang cantik, masuk wishlist!
+    <input type="checkbox">zaman terus berlari, aku terlalu tua dan lambat
+    <input type="checkbox">nanti, tunggu, jangan terburu-buru
+    <input type="checkbox">baik dan buruk ternyata cuma nilai
+    <input type="checkbox">apakah tikus menyadari dirinya tikus?
+</div>
+<div>
+    <input type="checkbox">luka ialah jalan keluar, bagi darah
+    <input type="checkbox">dari kegelapan yang lebih bebas
+    <input type="checkbox">cahaya ialah pagar
+    <input type="checkbox">apa bedanya keteraturan dan kebosanan?
+    <input type="checkbox">ke depan jurang, ke belakang utang
+</div>
+<div>
+    <input type="checkbox">tampang cool, meski hidup tumpul
+    <input type="checkbox">bersikap dingin dan melankolis
+    <input type="checkbox">mengapa butuh dan ingin selalu berkelahi?
+    <input type="checkbox">menatap layar putih
+    <input type="checkbox">apakah aku mengerti apa yang terjadi?
+</div>
+<div>
+    <input type="checkbox">terlalu banyak mulut terbuka
+    <input type="checkbox">berbicara dengan diri sendiri
+    <input type="checkbox">mencari makna dalam ruang hampa
+    <input type="checkbox">pikiran berlarian, tak ada waktu mengejarnya
+    <input type="checkbox">menatap wajah di cermin, mencoba berkenalan
+</div>
+<div>
+    <input type="checkbox">membuka banyak tab untuk satu masalah
+    <input type="checkbox">menyusun rencana hingga berakhir sia-sia
+    <input type="checkbox">mendengar suara alam, dan mematikan fitur makna
+    <input type="checkbox">bernafas meski sesak
+    <input type="checkbox">terbangun di alam mimpi
+</div>
+<div>
+    <input type="checkbox">terlalu banyak pilihan
+    <input type="checkbox">mencoba tertawa, meski hati kosong
+    <input type="checkbox">mengikuti arus, dan terombang-ambing
+    <input type="checkbox">apa yang benar-benar penting?
+    <input type="checkbox">melangkah ke depan, kaki enggan
+</div>
+<div>
+            <input type="checkbox">tubuh kaku, semangat layu
+            <input type="checkbox">siang berlalu dalam kerumitan
+            <input type="checkbox">menulis lagi hal-hal yang sama
+            <input type="checkbox">apa lagi yang hilang?
+            <input type="checkbox">healing atau uji nyali?
+        </div>
+        <div>
+    <input type="checkbox">sprei, panci, rantang cantik, masuk wishlist!
+    <input type="checkbox">zaman terus berlari, aku terlalu tua dan lambat
+    <input type="checkbox">nanti, tunggu, jangan terburu-buru
+    <input type="checkbox">baik dan buruk ternyata cuma nilai
+    <input type="checkbox">apakah tikus menyadari dirinya tikus?
+</div>
+    </div>
+    <script>
+        document.querySelectorAll('div:not(#wrapper)').forEach((e, i) => {
+            let w = e.getBoundingClientRect().width;
+            e.animate(
+                [
+                    { transform: `translateX(${-w}px)` },
+                    { transform: `translateX(${window.innerWidth}px)` }
+                ],
+                {
+                    duration: (Math.random() * 3 + 2) * 10000,
+                    iterations: Infinity,
+                    direction: i % 2 === 0 ? "alternate" : "alternate-reverse",
+                    delay: -Math.random() * 50000
+                }
+            );
+        });
+    </script>
+</body>
+</html>
